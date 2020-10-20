@@ -1,0 +1,36 @@
+﻿.part {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container {
+    overflow: auto;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 420px;
+    position: relative;
+}
+
+.drag {
+    width: 10%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #ffffc8;
+    cursor: pointer;
+    position: absolute;
+}
+        
+.drag.selected {
+    background-color: #b6f3b6;
+}
+
+.container:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #999;
+}
